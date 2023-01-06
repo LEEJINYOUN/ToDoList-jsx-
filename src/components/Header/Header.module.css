@@ -1,0 +1,55 @@
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  margin: 10px 0;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: bolder;
+  color: var(--color-text);
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-bg-dark);
+}
+
+.toggle {
+  padding-left: 15px;
+  font-size: 25px;
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--color-text);
+  transition: all 150ms ease-out;
+}
+
+.toggle:hover {
+  transform: scale(1.1);
+  color: var(--color-accent);
+}
+
+.filters {
+  display: flex;
+}
+
+.filter {
+  font-size: 25px;
+  margin: 5px;
+  text-transform: capitalize;
+  background-color: transparent;
+  font-weight: bold;
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+.filter.selected {
+  color: #6ee6be;
+  transition: all 0.3s ease-in-out;
+}
